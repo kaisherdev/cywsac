@@ -1,43 +1,16 @@
 ---
-const pageTitle = "Saniamientos Ambientales C&W"
-const titulo = "Sitio Web En Mantenimiento"
-const message = "Estamos en construcción, pronto recibirás nuevas noticias..."
-const atte = "La Gerencia"
-const image = "https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+import Hero from "@/components/Hero.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/tooth.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <main
-      class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8"
-    >
-
-      <div class="text-center">
-        <div class="flex items-center justify-center">
-          <img src="./logo-cyw.png" alt="Logo C&W" width="200px" height="200px">
-        </div>
-        <p class="text-base font-semibold text-indigo-600">
-          {titulo}
-        </p>
-        <h1
-          class="mt-4 text-xl font-bold tracking-tight text-gray-600 sm:text-5xl pb-5"
-        >
-          {message}
-        </h1>
-        <div class="flex justify-center items-center">
-          <img src={image} width="400px" height="400px" alt={titulo} class=" rounded-lg">
-        </div>
-        <p class="mt-6 text-base leading-7 text-gray-900 font-semibold ">
-          Atentamente: {atte}
-        </p>
-      </div>
-    </main>
-  </body>
-</html>
+<Layout
+  title="Emp. Saneamientos Ambientales"
+  description="Saneamientos Ambientales C&W especialista en limpieza desinfección, fumigación matenimiento y saneamiento ambiental."
+>
+  <main>
+    <SectionContainer id="home" class="py-16 md:py-36">
+      <Hero />
+    </SectionContainer>
+  </main>
+</Layout>

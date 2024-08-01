@@ -1,0 +1,86 @@
+---
+import SocialPill from "@/components/SocialPill.astro";
+import PlayCircleIcon from "@/icons/play-circle.astro";
+import EmailIcon from "@/icons/email.astro";
+---
+
+<section class="lg:flex lg:pt-40 pt-10 gap-4 px-4">
+  <!--cambiar pt-20 al implememtar header-->
+  <div
+    class="[&>p]:text-base [&>p]:font-medium lg:w-1/2 lg:text-start text-center"
+  >
+    <h1 class="lg:text-4xl font-semibold mb-5 text-3xl">
+      Somos especialistas en limpieza, desinfección, fumigación, mantenimiento y
+      saneamiento ambiental.
+    </h1>
+    <p>
+      Explore un enfoque transformador e innovador en servicios de saneamiento
+      ambiental. Descubra un nuevo mundo de experiencias de limpieza,
+      desinfección, desinsectación, desratización, mantenimiento y servicios en
+      general.
+    </p>
+    <nav
+      class="flex flex-wrap gap-8 mt-5 mb-5 items-center lg:justify-start justify-center"
+    >
+      <SocialPill href="mailto:servicios.ambientales@cywsac.com">
+        <EmailIcon class="size-4" />
+        Contáctame
+      </SocialPill>
+      <a
+        href="#"
+        class="flex underline text-base font-medium gap-2 hover:text-green-400"
+      >
+        <PlayCircleIcon href="#" />
+        ¿Qué es C&W?
+      </a>
+    </nav>
+  </div>
+  <div
+    class="flex relative lg:w-1/2 items-center justify-center lg:mt-0 mt-10 px-5 pb-16"
+  >
+    <img src="./hero-img.webp" alt="" class="object-cover" />
+    <button
+      class="p-2 bg-white rounded-lg font-medium shadow-xl absolute bottom-20 left-16 hover:bg-green-300 hover:text-white"
+      >Clientes <span class="text-green-700 font-bold">50+</span>
+    </button>
+    <button
+      class="p-2 bg-white rounded-lg font-medium shadow-xl absolute bottom-48 right-0 hover:bg-green-300 hover:text-white"
+      >Proyectos <span class="text-green-700 font-bold">100+</span></button
+    >
+    <button
+      class="p-2 bg-white rounded-lg font-medium shadow-xl absolute top-12 lg:left-8 left-0 hover:bg-green-300 hover:text-white"
+      >Certificaciones <span class="text-green-700 font-bold">27+</span></button
+    >
+  </div>
+</section>
+<div class="bg-green-300 p-4">
+  <ul
+    class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+  >
+    <img
+      src="./logo-viena.svg"
+      alt=""
+      class="size-16 col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+    />
+    <img
+      src="./logo-rokys.svg"
+      alt=""
+      class="size-16 col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+    />
+    <img
+      src="./logo-hotel-limaq.svg"
+      alt=""
+      class="size-16 col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+    />
+    <img
+      src="./logo-villa-chicken.svg"
+      alt=""
+      class="size-16 col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+    />
+    <img
+      src="./logo-rodizio.svg"
+      alt=""
+      class="size-16 col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+    />
+  </ul>
+</div>
