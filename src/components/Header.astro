@@ -1,0 +1,63 @@
+---
+import SocialPill from "@/components/SocialPill.astro";
+import HamburgerIcon from "@/icons/hamburger.astro";
+const navItems = [
+  {
+    title: "Inicio",
+    label: "inicio",
+    url: "/",
+  },
+  {
+    title: "Servicios",
+    label: "servicios",
+    url: "/#services",
+  },
+  {
+    title: "Poryectos",
+    label: "proyectos",
+    url: "/#projects",
+  },
+  {
+    title: "Blog",
+    label: "blog",
+    url: "/#blog",
+  },
+];
+---
+
+<header>
+  <nav
+    class="flex max-w-5xl mx-auto lg:px-0 px-4 h-16 items-center justify-between"
+  >
+    <a href="/" class="font-bold text-lg">
+      <img src="./logo-cyw.svg" alt="" class="lg:size-14 size-12" />
+    </a>
+    <ul aria-hidden="true" class="hidden lg:flex gap-5 text-base font-semibold">
+      <li class="flex gap-8">
+        {
+          navItems.map((link) => (
+            <a
+              aria-label={link.label}
+              href={link.url}
+              class="hover:text-green-700 hover:border-b-4 border-green-300 p-2"
+            >
+              {link.title}
+            </a>
+          ))
+        }
+      </li>
+    </ul>
+    <SocialPill
+      aria-hidden="true"
+      href="mailto:servicios.ambientales@cywsac.com"
+      class="hidden lg:inline-block border border-green-700 p-2 rounded-lg hover:bg-green-300 hover:text-white"
+    >
+      Escríbenos
+    </SocialPill>
+    <a id="menuButton" href="#" class="block lg:hidden">
+      <HamburgerIcon class="block lg:hidden" />
+    </a>
+  
+  </nav>
+</header>
+
