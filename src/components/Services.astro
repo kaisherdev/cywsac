@@ -1,0 +1,90 @@
+---
+import StarIcon from "@/icons/star.astro";
+
+const SERVICES = [
+  {
+    rubro: "Saneamiento ambiental",
+    title: "Desinsectación",
+    description:
+      "Eliminación de artrópodos e insectos dañinas para las personas",
+    image:
+      "https://media.istockphoto.com/id/1221633907/es/foto/desinfecci%C3%B3n-de-la-oficina-para-prevenir-covid-19.webp?b=1&s=170667a&w=0&k=20&c=6RzMwqAAO1xShe63PEYycbzJUHu2CF5x6bJVWnJMFTE=",
+  },
+  {
+    rubro: "Saneamiento ambiental",
+    title: "Limpieza de ambientes",
+    description: "Limpieza de oficinas, piscinas y casas de campo.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1682377521625-c656fc1ff3e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGlzY2luYXN8ZW58MHx8MHx8fDA%3D",
+  },
+  {
+    rubro: "Saneamiento ambiental",
+    title: "Desinfección",
+    description:
+      "Limpieza y desinfección de oficinas, almacenes y servicios higiénicos.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1663025409161-6ebabbf441b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzaW5mZWNjaW9ufGVufDB8fDB8fHww",
+  },
+  {
+    rubro: "Saneamiento ambiental",
+    title: "Desratización",
+    description: "Control y extinción de plagas como son las ratas.",
+    image: "https://images.unsplash.com/photo-1688577985002-049d8059c022?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    rubro: "Saneamiento ambiental",
+    title: "Tanque séptico",
+    description: "Limpieza y desinfección de tanque séptico.",
+    image:
+      "https://images.unsplash.com/photo-1541941392960-652036ca567e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGFucXVlJTIwcyVDMyVBOXB0aWNvfGVufDB8fDB8fHww",
+  },
+  {
+    rubro: "Saneamiento ambiental",
+    title: "Reservorio de agua",
+    description: "Limpieza y desinfección de reservorios de agua.",
+    image:
+      "https://images.unsplash.com/photo-1534641614095-6222aed9bdd6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
+---
+
+<section class="w-full min-w-80 pb-10">
+  <div class="pb-8 max-w-3xl mx-auto text-center">
+    <h2 class="font-bold text-2xl pt-14">
+      Explore nuestros servicios más populares
+    </h2>
+    <p class="font-semibold pt-4">
+      Especializada en la elaboración y ejecución de servicios relacionada con
+      los rubros de desinsectación, desratización, desinfección, limpieza y
+      desinfección de tanques sépticos, limpieza y desinfección de reservorios
+      de agua.
+    </p>
+  </div>
+  <section
+    class="flex lg:justify-center max-w-5xl overflow-x-auto snap-proximity lg:overflow-x-hidden overscroll-x-contain lg:grid grid-cols-3 gap-4 h-auto py-4 pb-10"
+  >
+    {
+      SERVICES.map(({ rubro, title, description, image }) => (
+        <article class="min-w-48 max-w-72 rounded-xl shadow-xl p-4 bg-green-100 hover:-translate-y-4 transition-all mx-auto hover:lg:border hover:lg:border-lime-400">
+          <figure class="pb-4">
+            <img src={image} class="rounded-lg bg-cover" alt="" />
+          </figure>
+          <nav>
+            <ul class="flex justify-between">
+              <li class="font-medium text-sm px-2 bg-green-400 rounded-lg text-white">
+                {rubro}
+              </li>
+              <li>
+                <StarIcon />
+              </li>
+            </ul>
+            <div>
+              <h3 class="text-xl font-bold">{title}</h3>
+              <p class="font-medium">{description}</p>
+            </div>
+          </nav>
+        </article>
+      ))
+    }
+  </section>
+</section>
