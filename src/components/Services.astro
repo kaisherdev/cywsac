@@ -65,13 +65,13 @@ const SERVICES = [
   >
     {
       SERVICES.map(({ rubro, title, description, image }) => (
-        <article class="min-w-48 max-w-72 rounded-xl shadow-xl p-4 bg-green-100 hover:-translate-y-4 transition-all mx-auto hover:lg:border hover:lg:border-lime-400">
+        <article class="min-w-52 max-w-72 rounded-xl shadow-xl p-4 bg-green-100 hover:-translate-y-4 transition-all mx-auto hover:lg:border hover:lg:border-lime-400">
           <figure class="pb-4">
             <img src={image} class="rounded-lg bg-cover" alt="" />
           </figure>
           <nav>
-            <ul class="flex justify-between">
-              <li class="font-medium text-sm px-2 bg-green-400 rounded-lg text-white">
+            <ul class="flex justify-between items-center">
+              <li class="lg:font-medium text-xs p-2 bg-green-300 rounded-lg text-white">
                 {rubro}
               </li>
               <li>
