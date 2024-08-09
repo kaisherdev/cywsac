@@ -1,0 +1,24 @@
+---
+import WhatsAppIcon from "@/icons/whatsapp.astro";
+import FacebookIcon from "@/icons/facebook.astro";
+import InstagramIcon from "@/icons/instagram.astro";
+---
+
+<footer class="bg-black/80">
+  <div class="max-w-5xl mx-auto pt-24 pb-24 text-white text-center relative">
+    <ul class="flex justify-center gap-4 pb-4">
+      <li><a href="#"><FacebookIcon /></a></li>
+      <li><a href="#"><InstagramIcon /></a></li>
+      <li><a href="#"><WhatsAppIcon /></a></li>
+    </ul>
+    <hr
+      class="absolute h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-green-500 to-transparent bg-center"
+    />
+    <p class="pt-4 lg:text-lg text-base">
+      &copy; {new Date().getFullYear()} Saneamientos Ambientales C&W S.A.C.
+      <span aria-hidden="true" class="hidden md:inline">|</span>
+      Todos los derechos resevados.
+    </p>
+  </div>
+</footer>
+
