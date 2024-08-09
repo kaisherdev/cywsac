@@ -4,6 +4,9 @@ import DocuemntCheckIcon from "@/icons/document-check.astro";
 import CheckIcon from "@/icons/check.astro";
 import BuldIcon from "@/icons/bulb.astro";
 import ScaleIcon from "@/icons/scale.astro";
+import TargetArrowIcon from "@/icons/target-arrow.astro";
+import EyeIcon from "@/icons/eye.astro";
+import DiamondIcon from "@/icons/diamond.astro";
 ---
 
 <section class="lg:flex lg:w-full min-w-80 pb-10 lg:px-0 px-4">
@@ -78,43 +81,42 @@ import ScaleIcon from "@/icons/scale.astro";
 
 <section class="lg:flex gap-8 pb-8">
   <div id="videoSA" class="flex flex-col lg:w-1/2 items-center justify-center mx-4">
-    <h2 class="text-4xl font-bold pb-4">
-      <span class="text-green-700">Nuestro</span> objetivo, misión, visión y valores
-    </h2>
+    <h2 class="lg:text-4xl text-3xl font-bold pb-4 tracking-tighter">
+      <strong>Nuestro</strong> <span class="text-green-700">objetivo, misión, visión y valores
+      </h2></span>
     <article class="mt-4 [&>p]:text-base [&>p]:font-medium pb-4">
       <h3 class="text-2xl font-bold mb-4">Nuestro Objetivo</h3>
       <p>
-        Es brindar el asesoramiento necesario y adecuado en cada uno de estos
-        campos ofreciendo servicio de ingeniería con soluciones confiables,
-        económicas y eficientes, aportando certificación en cada labor
+        Es brindar <strong>el asesoramiento necesario y adecuado</strong> en cada uno de estos
+        campos ofreciendo servicio de ingeniería con <strong>soluciones confiables,
+        económicas y eficientes</strong>, aportando certificación en cada labor
         realizado.
       </p>
     </article>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
-    <!-- <img src="./frontis-rokys-local.webp" alt="" class="rounded-xl object-cover w-full shadow-xl border border-green-700"/> -->
     <lite-youtube videoid="oHYhSvRautQ"></lite-youtube>
   </div>
   <div class="lg:w-1/2 mx-4 [&>article>p]:text-base font-medium pt-4">
     <article class="mt-4">
-      <h3 class="text-2xl font-bold mb-4">Nuestro Misión</h3>
+      <h3 class="text-2xl font-bold mb-4 flex gap-2 items-center"><TargetArrowIcon/>Misión</h3>
       <p>
-        es ofrecer servicios que se ajusten a las necesidades de las empresas
+        Ofrecer servicios que se ajusten a las necesidades de las empresas
         sin importar el rubro o el tamaño, brindando a nuestros clientes un
-        servicio de consultoría confiable y de la más alta calidad,
+        <strong>servicio de consultoría confiable y de la más alta calidad</strong>,
         contribuyendo en ambientes saludables, seguros y respetuosos del entorno
         ambiental.
       </p>
     </article>
     <article class="pt-4">
-      <h3 class="text-2xl font-bold mb-4">Nuestro Visión</h3>
+      <h3 class="text-2xl font-bold mb-4 flex gap-2 items-center"><EyeIcon/>Visión</h3>
       <p>
-        es ser una empresa reconocida como líder en proveer servicios de alto
-        nivel, brindando soluciones en temas de calidad, prevención de riesgos.
-        en seguridad, salud ocupacional, medioambiente y responsabilidad social.
+        Ser una empresa reconocida como <strong>líder en proveer servicios de alto
+          nivel</strong>, brindando soluciones en temas <strong>de calidad, prevención de riesgos,
+            en seguridad, salud ocupacional</strong>, medioambiente y responsabilidad social.
       </p>
     </article>
     <article class="mt-4">
-      <h3 class="text-2xl font-bold pb-4">Nuestrs valores</h3>
+      <h3 class="text-2xl font-bold pb-4 flex gap-2 items-center"><DiamondIcon/>Nuestros valores</h3>
       <ul class="mb-4">
         <li class="flex gap-2"><BuldIcon class="size-6"/>Excelencia e innovación</li>
         <li class="flex gap-2"><ScaleIcon class="size-6"/>Ética profesional</li>
