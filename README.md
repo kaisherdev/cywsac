@@ -13,21 +13,21 @@ y noramtivas nacionales de seguridad, higiene y ambiente que mejoren continuamen
 el desempeño de la organización. Proveemos el mantenimiento y mejora de su sistema
 de gestión, implementación y/o certificación.
 
-Nuestro objetivo es brindar el asesoramiento necesario y adecuado en cada uno de
+**Nuestro objetivo** es brindar el asesoramiento necesario y adecuado en cada uno de
 estos campos ofreciendo servicio de ingeniería con soluciones confiables,
 economicas y eficientes, aportando certificación en cada labor realizado.
 
-Nuestra misión es ofrecer servicios que se ajusten a las necesidades de las
+**Nuestra misión** es ofrecer servicios que se ajusten a las necesidades de las
 empresas sin importar el rubro o el tamaño, brindando a nuestros clientes un 
 servicio de consultoría confiable y de la más alta calidad, contribuyendo en
 ambientes saludables, seguros y respetuosos del entorno ambiental.
 
-Nuestra Visión es ser una empresa reconocida como líder en proveer servicios
+**Nuestra Visión** es ser una empresa reconocida como líder en proveer servicios
 de alto nivel, brindando soluciones en temas de calidad, prevención de riesgos.
 en seguridad, salud ocupacional, medioambiente y responsabilidad social.
 
-Por lo tanto nuestros valores van enfocado a **la integridad**, **honestidad**, **orientación al cliente**
-**excelencia e innovavión**, **aportando valor** y **concientización en la formación y capacitación**
+**Por lo tanto nuestros** valores van enfocado a _la integridad_, _honestidad_, _orientación al cliente_
+_excelencia e innovavión_, aportando valor y concientización en la formación y capacitación
 presencial generando desarrollo del personal de las organizacionesa la medida de solicitud
 del cliente y se realizan en sus sedes, y en el horaio y fecha solicitada.
 
