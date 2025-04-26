@@ -29,7 +29,7 @@ const menuitems = [
 const logoAlt = "Logo de saneamientos ambientasles c&w s.a.c."
 ---
 
-<header class="w-full fixed bg-green-200 border-b top-0 z-50">
+<header class="w-full fixed border-b top-0 z-50">
 	<nav class="flex justify-between items-center gap-8 h-16 lg:max-w-5xl lg:mx-auto mx-4">
     <div class="flex lg:w-auto w-full items-center justify-between">
       <a href="/">
@@ -55,7 +55,7 @@ const logoAlt = "Logo de saneamientos ambientasles c&w s.a.c."
                 <a
                   href={url}
                   aria-label={label}
-                  class="flex lg:px-3 py-2 items-center justify-center text-gray-700 hover:text-gray-900 "
+                  class="flex lg:px-3 py-2 items-center justify-center text-gray-600 hover:text-gray-900 "
                 >
                   <span> {title}</span>
                 </a>
@@ -123,6 +123,28 @@ const logoAlt = "Logo de saneamientos ambientasles c&w s.a.c."
 		</div>
 	</dialog>
 </header>
+
+<style>
+	header{
+		background: transparent;
+		animation: header-blur-scroll linear both;
+		animation-timeline: scroll();
+		animation-range: 0 250px;
+		border-bottom: 1px solid transparent;
+	}
+
+	@keyframes header-blur-scroll{
+		0%{
+			background: transparent;
+			backdrop-filter: blur(0px);
+		}
+		100%{
+			backdrop-filter: blur(10px);
+			background: rgb(74 222 128 / .4);
+			border-bottom-color: #15803d;
+		}
+	}
+</style>
 
 <script>
 	// Get the menu elements
